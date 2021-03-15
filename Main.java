@@ -30,17 +30,28 @@ class Main {
     }
     System.out.println("We have added " + manyPlayers + " players to this hunt. Let’s find some eggs!");
     hunt(playerList);
+    recap(playerList);
   }
-public static void hunt(ArrayList<Player> playerList){
-  Random r = new Random();
-  int i;
-  int e;
-  for (i = 0; i < playerList.size();i++){
-    int eggNum = r.nextInt(11);
-    for(e = 0; e < eggNum; e++){
-     Egg egg = new Egg();
-     playerList.get(i).foundEgg(egg);
+  public static void hunt(ArrayList<Player> playerList){
+    Random r = new Random();
+    int i;
+    int e;
+    for (i = 0; i < playerList.size();i++){
+      int eggNum = r.nextInt(11);
+      for(e = 0; e < eggNum; e++){
+      Egg egg = new Egg();
+      playerList.get(i).foundEgg(egg);
+      }
     }
   }
-}
+
+  public static void recap(ArrayList<Player> playerList){
+    int i;
+    for (i = 0; i < playerList.size();i++){
+      System.out.println("Player " + i + " found " + playerList.get(i).getNumEggs() + " eggs");
+      playerList.get(i).printBasket();
+    }  
+  }
+
+
 }
