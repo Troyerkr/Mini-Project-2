@@ -31,7 +31,7 @@ class Main {
     System.out.println("We have added " + manyPlayers + " players to this hunt. Let’s find some eggs!");
     hunt(playerList);
   }
-public static void hunt(ArrayList playerList){
+public static void hunt(ArrayList<Player> playerList){
   Random r = new Random();
   int i;
   int e;
@@ -39,7 +39,7 @@ public static void hunt(ArrayList playerList){
     int eggNum = r.nextInt(11);
     for(e = 0; e < eggNum; e++){
      Egg egg = new Egg();
-     playerList.get(i).foundEgg(egg); 
+     playerList.get(i).foundEgg(egg);
     }
   }
 }
