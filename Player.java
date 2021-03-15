@@ -13,7 +13,7 @@ class Player {
    * this is the constructor method for the player class
    */
   Player(){
-    numEggs = 0;
+    numEggs = 0;  
   }
   
   /**
@@ -36,19 +36,19 @@ class Player {
   /**
    * this method prints out each egg in the basket
    */
-  void printBasket() {
-    for (Egg i : basket) {
-      i.printEgg();
+    void printBasket() {
+      for (Egg i : basket) {
+        i.printEgg();
+      }
     }
-  }
 
   /**
    * this method adds an egg to the player's basket and then adds 1 to the number of eggs
    * @param the method asks for an Egg object to be passed through
   */
-  void foundEgg(Egg egg) {
+   void foundEgg(Egg egg) {
     numEggs ++;
     basket.add(egg);
   }
-
+  
 }
