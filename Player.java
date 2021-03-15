@@ -7,21 +7,21 @@ import java.util.ArrayList;
  */
 class Player {
   private int numEggs;
-
+  private ArrayList<Egg> basket = new ArrayList<Egg>();
+  
   /**
    * this is the constructor method for the player class
    */
-  Player() {
+  Player(){
     numEggs = 0;
-    private ArrayList<Egg> basket = new ArrayList<Egg>();
   }
-
+  
   /**
    * this is the acessor method for the numEggs varible.
    * @return the number of eggs in a players basket as an int
    */
   int getNumEggs() {
-    return basket.size();
+    return numEggs;
   }
 
   /**
