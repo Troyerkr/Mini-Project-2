@@ -2,9 +2,13 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Random;
 /**
- * this class hosts the easter egg hunt it asks the user to input the number of players then it generates the results of the egg hunt and displays the summary statistics
- *@author Kyle Troyer
- *@version 3/15/20
+ * Mini-Project 2
+ * Group# 8: Kyle Troyer, Seth Adleta, Luke Greely, Peter Winter
+ * Date 3/16/21
+ * this class hosts the easter egg hunt it asks the user to input the number of players 
+ * then it generates the results of the egg hunt and displays the summary statistics
+ * @author Kyle Troyer, Seth Adleta, Luke Greely, Peter Winter
+ * @version 3/15/20
 */
 class Main {
 /**
@@ -18,6 +22,7 @@ class Main {
   /* found the input validation at: 
     https://stackoverflow.com/questions/3059333/validating-input-using-java-util-scanner 
   */
+  //Extra Credit 1: input validation
     do {
         while (!s.hasNextInt()) {
             System.out.println("Enter a positive whole number:");
@@ -99,6 +104,7 @@ class Main {
         }
       }
       //for each player's basket it looks at every egg and 1 to the contentsArray in the index that coresponds to the egg's contents
+      //Extra Credit 2: display contents
       for (int c = 0; c < bs; c++){
         String contents = playerList.get(i).getBasket().get(c).getEggContents();
         if(contents.equals("Cadbury Egg")){

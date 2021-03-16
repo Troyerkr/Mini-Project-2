@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 /**
  * this class keeps track of each player and their basket
- * @author Kyle Troyer
+ * @author Kyle Troyer, Seth Adleta, Luke Greely, Peter Winter
  * @version 3/15/21
  */
 class Player {

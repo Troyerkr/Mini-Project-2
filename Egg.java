@@ -2,7 +2,7 @@ import java.util.Random;
 
 /**
  * this class creates eggs as and assigns them a random color and contents
- * @author Kyle Troyer
+ * @author Kyle Troyer, Seth Adleta, Luke Greely, Peter Winter
  * @version 3/14/21
  */
 class Egg {
