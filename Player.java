@@ -7,13 +7,14 @@ import java.util.ArrayList;
  */
 class Player {
   private int numEggs;
-  private ArrayList<Egg> basket = new ArrayList<Egg>();
+  private ArrayList<Egg> basket;
   
   /**
    * this is the constructor method for the player class
    */
   Player(){
-    numEggs = 0;  
+    numEggs = 0;
+    basket = new ArrayList<Egg>();  
   }
   
   /**
@@ -29,7 +30,7 @@ class Player {
    * player's basket
    * @return the player's basket as an ArrayList
    */
-  ArrayList getBasket() {
+  ArrayList<Egg> getBasket() {
     return basket;
   }
 
