@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Random;
 /**
- * this class ....
- *@author
+ * this class hosts the easter egg hunt it asks the user to input the number of players then it generates the results of the egg hunt and displays the summary statistics
+ *@author Kyle Troyer
  *@version 3/15/20
 */
 class Main {
@@ -40,6 +40,10 @@ class Main {
     recap(playerList);
     stats(playerList);
   }
+  /**
+   * this method generates a random number to determine the number of eggs each player found and then creates that many eggs and put's them into their basket.
+   * @param the ArrayList of players in the hunt
+  */
   public static void hunt(ArrayList<Player> playerList){
     Random r = new Random();
     for (int i = 0; i < playerList.size();i++){
@@ -51,20 +55,19 @@ class Main {
     }
   }
 /**
- * this method ...
- *@param
+ * this method displays how mant eggs each player found and displays the color and contents of each egg
+ * @param the ArrayList of players in the hunt
 */
   public static void recap(ArrayList<Player> playerList){
-    int i;
-    for (i = 0; i < playerList.size();i++){
+    for (int i = 0; i < playerList.size();i++){
       System.out.println("Player " + i + " found " + playerList.get(i).getNumEggs() + " eggs");
       playerList.get(i).printBasket();
       System.out.println();
     }  
   }
 /**
- * this method ...
- *@param
+ * this method organizes and displays stats about the easter egg hunt
+ * @param the ArrayList of players in the hunt
 */
   public static void stats(ArrayList<Player> playerList){
         
